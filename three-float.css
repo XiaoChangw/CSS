@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%; /*有图片时就加上这句话*/
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.logo {
+  display: inline-block; /*嫌弃logo占据空间太长*/
+  float: left;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.logo > img {
+  height: 26px;
+  vertical-align: top; /*嫌弃图 片下面有多余的东西*/
+}
+ul > li {
+  float: left;
+  padding: 4px 0.5em;
+  line-height: 32px;
+}
+
+ul {
+  display: inline-block;
+  float: right;
+}
+header {
+  background: grey;
+  color: #ffffff;
+}
+.content {
+  /*border: 1px solid red;会干扰我调节像素，要么删掉，要么改成outline*/
+  /*outline: 1px solid red;*/
+  width: 800px;
+  /*margin: 0 auto;前提是它的宽度是固定的*/
+  margin-left: auto;
+  margin-right: auto; /*比较好，不会覆盖上下的margin，这两句只针对块元素*/
+}
+.content > aside {
+  width: 200px;
+  background: pink;
+  height: 300px;
+  float: left;
+}
+.content > main {
+  background: yellow;
+  height: 300px;
+  width: 500px;
+  float: left;
+}
+.content > .ad {
+  background: blue;
+  width: 100px;
+  height: 300px;
+  float: left;
+}
