@@ -3,6 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
-ul，ol {
+ul,
+ol {
   list-style: none;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+ul > li {
+  border: 1px solid red;
+  float: left;
+  padding: 4px 0.5em; /*好看一些*/
+}
+ul {
+  border: 1px solid green;
+  display: inline-block; /*让ul更紧凑些*/
 }
