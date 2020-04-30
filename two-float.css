@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%; /*有图片时就加上这句话*/
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.logo {
+  display: inline-block; /*嫌弃logo占据空间太长*/
+  float: left;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.logo > img {
+  height: 26px;
+  vertical-align: top; /*嫌弃图 片下面有多余的东西*/
+}
+ul > li {
+  float: left;
+  padding: 4px 0.5em;
+  line-height: 32px;
+}
+
+ul {
+  display: inline-block;
+  float: right;
+}
+header {
+  background: #333333;
+  color: #ffffff;
+}
